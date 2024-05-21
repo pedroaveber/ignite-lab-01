@@ -1,4 +1,4 @@
-import { getSession } from "@auth0/nextjs-auth0";
+import { getAccessToken, getSession } from "@auth0/nextjs-auth0";
 import { redirect } from "next/navigation";
 
 export default async function AppLayout({
@@ -8,10 +8,12 @@ export default async function AppLayout({
 }>) {
 
   const session = await getSession()
-
   if (!session) {
     redirect('/api/auth/login')
   }
+
+  const token = await getAccessToken()
+  console.log('token -> ', token)
 
   return (
     <>

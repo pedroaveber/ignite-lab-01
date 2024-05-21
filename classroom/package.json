@@ -1,5 +1,5 @@
 {
-  "name": "purchases",
+  "name": "classroom",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -24,7 +24,7 @@
     "@nestjs/graphql": "^10.0.8",
     "@nestjs/microservices": "^8.4.3",
     "@nestjs/platform-express": "^8.0.0",
-    "@prisma/client": "^3.11.1",
+    "@prisma/client": "^3.15.2",
     "apollo-server-express": "^3.6.7",
     "express-jwt": "^6.1.1",
     "graphql": "^15.8.0",
@@ -33,7 +33,7 @@
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
-    "slugify": "^1.6.5"
+    "slugify": "^1.6.6"
   },
   "devDependencies": {
     "@nestjs/cli": "^8.0.0",
