@@ -10,10 +10,10 @@ export default async function AppLayout({
   const session = await getSession()
   if (!session) {
     redirect('/api/auth/login')
+  } else {
+    const accessToken = await getAccessToken()
+    console.log('token => ', accessToken)
   }
-
-  const token = await getAccessToken()
-  console.log('token -> ', token)
 
   return (
     <>
